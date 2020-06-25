@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8" />
+        <title>Skyrocket Trading</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/typography.css">
+    </head>
+    <div class="container">
+        <div class="header">
+            <div class="header-column-img">
+                <a href="index.html"><h1>Skyrocket Trading</h1></a>
+            </div>     
+            <div class="header-column-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>  
+            </div>
+            <div class="header-border-bottom"></div>
+        </div>
+        <div class="ticker">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "Nasdaq 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "BTC/USD"
+                },
+                {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "ETH/USD"
+                }
+                ],
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div class="blog">
+            <center><img class="profile-img" src="images/trading.jpg" alt="avatar" style="width:50%"></center>
+            <p>
+            Skyrocket Trading is founded to help transforming ordinary investors to extraordinary traders.
+
+            Skyrocket Trading offers a framework that you can use in trading any market in the world. <br/>
+                <a href="#" class="fa fa-twitter"></a>    
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </p>
+        </div>
+
+        <div class="footer">Copyright &copy; 2020 SkyrocketTrading.com</div>
+    </div>
+</html>

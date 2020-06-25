@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px #2196f3 solid;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-header {
+  height: 30%;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-footer {
+  padding: 25px;
+}
+
+.card button {
+  background-color: #fff;
+  border: 2px solid #50c6db;
+  color: #50c6db;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #b0e0ea;
+  padding: 10px;
+  font-family: "Asap", sans-serif;
+}
+
+.fa {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin: 15px 10px 15px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: #fff;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: #fff;
+}
+
+img {
+  border-radius: 8px 8px 0 0;
+  min-height: 170px;
+  max-height: 170px;
+  border-bottom: 2px solid #42a5f5;
+}
+
+.blog img {
+  min-width: 20px;
+  min-height: 10px;
+}
+
+.blog h3 {
+  text-align: center;
+}
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width:600px) {
+  .container {
+    display: grid;
+    background-color: #fff;
+  }
+  
+  .header-column-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 55px;
+    min-width: 300px;
+    border-bottom: 2px solid #b0e0ea;
+    margin: 15px -9;
+    margin-top: 0px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+  }
+  
+  .header-column-nav {
+    display: none;
+  }
+  
+  .header-border-bottom {
+    display: none;
+  }
+  
+  .card p {
+    font-size: .75rem;
+    margin-bottom: .75rem;
+    font-family: "Hind", sans-serif;
+    max-height: 450px;
+    text-align: left;
+    line-height: 20px;
+  }
+  
+  .card-container {
+    max-height: 250px;
+    padding: 15px;
+  }
+  
+  .ticker {
+    margin: 0 -9;
+    margin-bottom: 10px;
+    margin-top: 70px;
+  }
+
+  .footer {
+    margin: 15px -9;
+    margin-top: 25px;
+  }
+
+  .profile {
+    padding: 25px;
+  }
+
+  .profile img {
+    min-width: 300px;
+  }
+  
+  .sharing-icons {
+    text-align: center;
+  }
+
+  .blog {
+    padding: 10px;
+  }
+
+  .blog p {
+    min-width: 150px;
+    text-align: justify;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 15px;    
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      border-bottom: 2px solid #b0e0ea;
+      max-width: 1000px;
+      max-height: 100px;
+    }
+    
+    .header-border-bottom {
+      grid-column: 1 / 4;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #b0e0ea;
+    }
+
+  .header-column-img {
+      display: flex;
+      grid-column: 1 / 2;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 20px;
+      max-height: 105px;
+      margin-top: 40px;
+  }
+
+  .header-column-nav {
+      display: flex;
+      grid-column: 2 / 4;
+      text-transform: uppercase;
+      font-family: "Asap", sans-serif;
+      color: #9f9c9c;
+      flex-direction: row;
+      justify-content: flex-end;
+      max-height: 105px;
+  }
+
+  .header-column-nav nav ul {
+      display: flex;
+      list-style-type: none;
+  }
+
+  .header-column-nav nav li {
+      padding: 50px;
+  }
+
+  .ticker {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 4;
+    margin-top: 110px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px #2196f3 solid;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    max-height: 450px;
+  }
+  
+  .card-header {
+    height: 30%;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .card-container {
+    padding: 20px;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  
+  .card-footer {
+    padding: 25px;
+  }
+  
+  .card button {
+    background-color: #fff;
+    border: 2px solid #50c6db;
+    color: #50c6db;
+    padding: .5rem;
+    border-radius: 5px;
+  }
+
+  .footer {
+    grid-column: 1 / 4;
+    margin-top: 20px;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    align-items: center;
+  }
+
+  .blog p {
+    min-width: 700px;
+  }
+
+  .profile img {
+    min-width: 450px;
+  }
+}
+
+/* Large Screens */
+@media (min-width:901px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 60px;
+    background-color: #fff;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #b0e0ea;
+    max-width: 1000px;
+    max-height: 100px;
+  }
+
+  .header-border-bottom {
+      grid-column: 1 / 4;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #b0e0ea;
+  }
+
+  .header-column-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 25px;
+      max-height: 105px;
+  }
+
+  .header-column-nav {
+      display: flex;
+      text-transform: uppercase;
+      font-family: "Asap", sans-serif;
+      color: #9f9c9c;
+      flex-direction: row;
+      justify-content: flex-end;
+      max-height: 105px;
+      margin-left: 175px;
+  }
+
+  .header-column-nav nav ul {
+      display: flex;
+      list-style-type: none;
+  }
+
+  .header-column-nav nav li {
+      padding: 50px;
+  }
+
+  .ticker {
+      display: flex;
+      justify-content: center;
+      grid-column: 1 / 4;
+      margin-top: 110px;
+  }
+
+  .card p {
+    font-size: .75rem;
+    margin-bottom: .75rem;
+    font-family: "Hind", sans-serif;
+  }
+
+  .card-container {
+    padding: 20px;
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .footer {
+    grid-column: 1 / 4;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    min-width: 500px;
+  }
+
+  .profile-img {
+    min-height: 200px;
+    min-width: 400px;
+    border: none;
+    margin-top: 55px;
+  }
+
+  .profile p {
+    margin-top: 105px;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    align-items: center;
+  }
+
+  .blog p {
+    min-width: 750px;
+  }
+}
