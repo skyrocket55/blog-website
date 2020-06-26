@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Hind&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Carrois+Gothic+SC&family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Large Screens */
 a {
@@ -18,7 +19,7 @@ p {
 
 h3,
 h5 {
-    font-family: "Hind", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -30,6 +31,10 @@ h1 {
 @media (max-width:600px) {
     p {
         margin-top: 0;
+        text-align: center;
+    }
+
+    h5 {
         text-align: center;
     }
 }

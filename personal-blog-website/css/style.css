@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .card {
   display: flex;
@@ -28,7 +29,7 @@
   border-radius: 5px;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   border-top: 2px solid #b0e0ea;
@@ -68,15 +69,26 @@ img {
   min-height: 170px;
   max-height: 170px;
   border-bottom: 2px solid #42a5f5;
+  width: 100%;
 }
 
-.blog img {
+article img {
   min-width: 20px;
   min-height: 10px;
+  width: 30%;
+  border-bottom: none;
 }
 
-.blog h3 {
+article h3 {
   text-align: center;
+}
+
+article p {
+  font-family: "Roboto", sans-serif;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Anything smaller than first breakpoint 600px */
@@ -130,7 +142,7 @@ img {
     margin-top: 70px;
   }
 
-  .footer {
+  footer {
     margin: 15px -9;
     margin-top: 25px;
   }
@@ -147,11 +159,11 @@ img {
     text-align: center;
   }
 
-  .blog {
+  article {
     padding: 10px;
   }
 
-  .blog p {
+  article p {
     min-width: 150px;
     text-align: justify;
   }
@@ -169,7 +181,7 @@ img {
       background-color: #fff;
     }
 
-    .header {
+    header {
       display: flex;
       flex-direction: row;
       position: fixed;
@@ -260,24 +272,25 @@ img {
     border-radius: 5px;
   }
 
-  .footer {
+  footer {
     grid-column: 1 / 4;
     margin-top: 20px;
   }
 
-  .blog {
+  article {
     display: flex;
     flex-direction: column;
     grid-column: 1/4;
     align-items: center;
   }
 
-  .blog p {
+  article p {
     min-width: 700px;
   }
 
   .profile img {
     min-width: 450px;
+    width: 30%;
   }
 }
 
@@ -293,7 +306,7 @@ img {
     background-color: #fff;
   }
 
-  .header {
+  header {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -363,7 +376,7 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .footer {
+  footer {
     grid-column: 1 / 4;
   }
 
@@ -379,20 +392,21 @@ img {
     min-width: 400px;
     border: none;
     margin-top: 55px;
+    width: 30%;
   }
 
   .profile p {
     margin-top: 105px;
   }
 
-  .blog {
+  article {
     display: flex;
     flex-direction: column;
     grid-column: 1/4;
     align-items: center;
   }
 
-  .blog p {
+  article p {
     min-width: 750px;
   }
 }
