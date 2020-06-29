@@ -77,6 +77,7 @@ article img {
   min-height: 10px;
   width: 30%;
   border-bottom: none;
+  border-radius: 5px;
 }
 
 article h3 {
@@ -89,6 +90,20 @@ article p {
 
 figcaption {
   font-family: "Roboto", sans-serif;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+blockquote {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  max-width: 700px;
 }
 
 /* Anything smaller than first breakpoint 600px */
@@ -109,7 +124,7 @@ figcaption {
     margin-top: 0px;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 95%;
     background: #fff;
     top: 0;
   }
@@ -167,6 +182,15 @@ figcaption {
     min-width: 150px;
     text-align: justify;
   }
+
+  article img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .avatar {
+    width: 50%;
+  }
 }
 
 /* Medium Screens */
@@ -186,7 +210,7 @@ figcaption {
       flex-direction: row;
       position: fixed;
       top: 0;
-      width: 100%;
+      width: 98%;
       background-color: #fff;
       border-bottom: 2px solid #b0e0ea;
       max-width: 1000px;
@@ -290,6 +314,15 @@ figcaption {
 
   .profile img {
     min-width: 450px;
+    width: 30%;
+  }
+
+  article img {
+    width: 70%;
+    border-radius: 5px;
+  }
+
+  .avatar {
     width: 30%;
   }
 }
