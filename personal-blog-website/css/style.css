@@ -1,110 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.card {
-  display: flex;
-  flex-direction: column;
-  border: 1px #2196f3 solid;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.card-header {
-  height: 30%;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.card-footer {
-  padding: 25px;
-}
-
-.card button {
-  background-color: #fff;
-  border: 2px solid #50c6db;
-  color: #50c6db;
-  padding: .5rem;
-  border-radius: 5px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  border-top: 2px solid #b0e0ea;
-  padding: 10px;
-  font-family: "Asap", sans-serif;
-}
-
-.fa {
-  width: 10px;
-  height: 10px;
-  padding: 10px;
-  margin: 15px 10px 15px;
-  border-radius: 5px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: #fff;
-}
-
-.fa-twitter {
-  background: #55acee;
-  color: #fff;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: #fff;
-}
-
-img {
-  border-radius: 8px 8px 0 0;
-  min-height: 170px;
-  max-height: 170px;
-  border-bottom: 2px solid #42a5f5;
-  width: 100%;
-}
-
-article img {
-  min-width: 20px;
-  min-height: 10px;
-  width: 30%;
-  border-bottom: none;
-  border-radius: 5px;
-}
-
-article h3 {
-  text-align: center;
-}
-
-article p {
-  font-family: "Roboto", sans-serif;
-}
-
-figcaption {
-  font-family: "Roboto", sans-serif;
-}
-
-.underline {
-  text-decoration-line: underline;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-blockquote {
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
-  max-width: 700px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Carrois+Gothic+SC&family=Hind&family=Roboto&display=swap');
 
 /* Anything smaller than first breakpoint 600px */
 @media (max-width:600px) {
@@ -441,5 +335,9 @@ blockquote {
 
   article p {
     min-width: 750px;
+  }
+
+  .avatar {
+    width: 25%;
   }
 }

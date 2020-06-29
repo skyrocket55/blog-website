@@ -1,144 +1,148 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Skyrocket Trading</title>    
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/typography.css">
-    </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <div class="container">
-        <header>
-            <div class="header-column-img">
-                <a href="index.html"><h1>Skyrocket Trading</h1></a>
-            </div>     
-            <div class="header-column-nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-border-bottom"></div>
-        </header>
-        <div class="ticker">
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                {
-                "symbols": [
-                {
-                    "proName": "FOREXCOM:SPXUSD",
-                    "title": "S&P 500"
-                },
-                {
-                    "proName": "FOREXCOM:NSXUSD",
-                    "title": "Nasdaq 100"
-                },
-                {
-                    "proName": "FX_IDC:EURUSD",
-                    "title": "EUR/USD"
-                },
-                {
-                    "proName": "BITSTAMP:BTCUSD",
-                    "title": "BTC/USD"
-                },
-                {
-                    "proName": "BITSTAMP:ETHUSD",
-                    "title": "ETH/USD"
-                }
-                ],
-                "colorTheme": "light",
-                "isTransparent": false,
-                "displayMode": "adaptive",
-                "locale": "en"
-            }
+
+<head>
+    <meta charset="utf-8" />
+    <title>Skyrocket Trading</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container">
+    <header>
+        <div class="header-column-img">
+            <a href="index.html">
+                <h1>Skyrocket Trading</h1>
+            </a>
+        </div>
+        <div class="header-column-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-border-bottom"></div>
+    </header>
+    <div class="ticker">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "Nasdaq 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "BTC/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "ETH/USD"
+                            }
+                        ],
+                            "colorTheme": "light",
+                                "isTransparent": false,
+                                    "displayMode": "adaptive",
+                                        "locale": "en"
+                    }
                 </script>
-            </div>
-            <!-- TradingView Widget END -->
         </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/skyrocket.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>Skyrocket55<br/>
-                    June 23, 2020 | 5 min
-                    </p>
-                <h3>Finding Multibaggers in a Bear Market</h3>
-                <button><a href="blog.html">View</a></button>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/charts.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>Spyfrat<br/>
-                    June 7, 2020 | 7 min
-                    </p>
-                <h3>Selling Market Tops and Buying Market Bottoms</h3>
-                <button><a href="blog.html">View</a></button>    
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/quants.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>JM Basso<br/>
-                    May 25, 2020 | 8 min
-                    </p>
-                <h3>Quant-based Trading Strategy for Retail Traders</h3>
-                <button><a href="blog.html">View</a></button>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/reversal.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>Skyrocket55<br/>
-                    June 23, 2020 | 5 min
-                    </p>
-                <h3>Bottom Reversal Trading Setups</h3>
-                <button><a href="blog.html">View</a></button>  
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/framework.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>Skyrocket55<br/>
-                    June 7, 2020 | 3 min
-                    </p>
-                <h3>Creating a Robust Trading Framework</h3>
-                <button><a href="blog.html">View</a></button>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <img src="images/risk-mgt.jpg" alt="charts">
-            </div>
-            <div class="card-container">
-                <p>Skyrocket55<br/>
-                    May 25, 2020 | 8 min
-                    </p>
-                <h3>Risk Management's Line of Defense</h3>
-                <button><a href="blog.html">View</a></button>
-            </div>
-        </div>
-
-        <footer>Copyright &copy; 2020 SkyrocketTrading.com</footer>
+        <!-- TradingView Widget END -->
     </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/skyrocket.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>Skyrocket55<br />
+                June 23, 2020 | 5 min
+            </p>
+            <h3>Finding Multibaggers in a Bear Market</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/charts.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>Spyfrat<br />
+                June 7, 2020 | 7 min
+            </p>
+            <h3>Selling Market Tops and Buying Market Bottoms</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/quants.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>JM Basso<br />
+                May 25, 2020 | 8 min
+            </p>
+            <h3>Quant-based Trading Strategy for Retail Traders</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/reversal.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>Skyrocket55<br />
+                June 23, 2020 | 5 min
+            </p>
+            <h3>Bottom Reversal Trading Setups</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/framework.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>Skyrocket55<br />
+                June 7, 2020 | 3 min
+            </p>
+            <h3>Creating a Robust Trading Framework</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="images/risk-mgt.jpg" alt="charts">
+        </div>
+        <div class="card-container">
+            <p>Skyrocket55<br />
+                May 25, 2020 | 8 min
+            </p>
+            <h3>Risk Management's Line of Defense</h3>
+            <button><a href="blog.html">View</a></button>
+        </div>
+    </div>
+
+    <footer>Copyright &copy; 2020 SkyrocketTrading.com</footer>
+</div>
+
 </html>
